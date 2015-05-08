@@ -11,6 +11,7 @@
 // about supported directives.
 //
 //= require jquery
+// require jquery-rails, ~>2.3.0
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .

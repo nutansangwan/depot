@@ -31,7 +31,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-
+    gem 'capistrano'
+    gem 'capistrano-passenger'
 group :development, :test do
   # Call 'debugger' anywhere in the code to stop execution and get a debugger console
   gem 'debugger'
@@ -41,5 +42,15 @@ group :development, :test do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+end
+
+gem 'jquery-ui-rails'
+
+gem 'will_paginate','~> 3.0.4'
+
+gem 'bcrypt', '~> 3.1.0'
+
+group :production do
+gem 'mysql2'
 end
 
